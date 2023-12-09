@@ -36,10 +36,10 @@ const processSortAscended = function() {
     arrayToSortCopy = [...arrayToSort,]
     let counter = arrayToSort.length
     while (counter !== 0) {
-        // Finding the smalles number of 'arrayToSortCopy'.
+        // Finding the smallest number of 'arrayToSortCopy'.
         let smallestNumber = findSmallestNumber(arrayToSortCopy)
         sortAscendedArray.push(smallestNumber)
-        // Supposed to a copy of 'arrayToSortCopy' but excluding the 'smallestNumber'.
+        // Supposed to be a copy of 'arrayToSortCopy' but excluding the 'smallestNumber'.
         let mutatedArrayToSortCopy = mutateArrayToSortCopy(arrayToSortCopy, smallestNumber)
         arrayToSortCopy = [...mutatedArrayToSortCopy,]
         counter--        
