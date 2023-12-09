@@ -18,14 +18,12 @@ const mutateArrayToSortCopy = function(arrayToSortCopy, smallestNumber) {
 
 // Process of finding the 'smallestNumber' of 'arrayToSortCopy'.
 const findSmallestNumber = function(theArray) {
+    currentIndex = 0
     for (let i = 0; i < theArray.length; i++) {
         if (theArray[currentIndex] >= theArray[nextIndex]) {
             currentIndex = nextIndex
         } 
         nextIndex++        
-    }
-    if (theArray.length === 1) {
-        currentIndex = 0
     }
     nextIndex = 0
     return theArray[currentIndex]
